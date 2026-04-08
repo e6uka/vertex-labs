@@ -42,7 +42,7 @@ function Nav() {
 
   const links = [
     ['Services', '#services'],
-    ['About', '#why'],
+    ['Why Us', '#why'],
     ['Process', '#process'],
     ['Contact', '#contact'],
   ]
@@ -50,20 +50,15 @@ function Nav() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled
-          ? 'backdrop-blur-xl shadow-lg border-b'
-          : 'bg-transparent'
+        ? 'backdrop-blur-xl shadow-lg border-b'
+        : 'bg-transparent'
         }`}
       style={scrolled ? { backgroundColor: 'rgba(15,23,42,0.92)', borderColor: '#1E293B' } : {}}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <a href="#" className="flex items-center gap-2.5">
-            <div
-              className="w-8 h-8 rounded-lg flex items-center justify-center"
-              style={{ backgroundColor: '#4287f5' }}
-            >
-              <span className="font-bold text-sm" style={{ color: '#0F172A' }}>V</span>
-            </div>
+            <img src="/icon-white.svg" alt="Vertex Labs" className="w-8 h-8 rounded-lg" />
             <span className="font-semibold tracking-tight" style={{ color: '#E2E8F0' }}>Vertex Labs</span>
           </a>
 
@@ -85,7 +80,7 @@ function Nav() {
           <a
             href="#contact"
             className="hidden md:inline-flex items-center gap-1.5 text-sm px-5 py-2.5 rounded-full font-semibold transition-opacity hover:opacity-85"
-            style={{ backgroundColor: '#4287f5', color: '#0F172A' }}
+            style={{ backgroundColor: '#636b2f', color: '#0F172A' }}
           >
             Get Started
           </a>
@@ -117,7 +112,7 @@ function Nav() {
             <a
               href="#contact"
               className="inline-flex mt-2 text-sm px-5 py-2.5 rounded-full font-semibold"
-              style={{ backgroundColor: '#4287f5', color: '#0F172A' }}
+              style={{ backgroundColor: '#636b2f', color: '#0F172A' }}
               onClick={() => setMenuOpen(false)}
             >
               Get Started
@@ -138,16 +133,16 @@ function Hero() {
       <div className="absolute inset-0 pointer-events-none">
         <div
           className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[600px] rounded-full blur-3xl opacity-20"
-          style={{ background: 'radial-gradient(ellipse, #4287f5 0%, transparent 70%)' }}
+          style={{ background: 'radial-gradient(ellipse, #636b2f 0%, transparent 70%)' }}
         />
       </div>
 
       <div className="relative max-w-5xl mx-auto">
         <div
           className="inline-flex items-center gap-2 text-xs font-semibold px-4 py-2 rounded-full mb-8 tracking-widest uppercase border"
-          style={{ backgroundColor: 'rgba(163,255,18,0.08)', borderColor: 'rgba(163,255,18,0.2)', color: '#4287f5' }}
+          style={{ backgroundColor: 'rgba(163,255,18,0.08)', borderColor: 'rgba(163,255,18,0.2)', color: '#636b2f' }}
         >
-          <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ backgroundColor: '#4287f5' }} />
+          <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ backgroundColor: '#636b2f' }} />
           Cloud · Software · Systems
         </div>
 
@@ -157,14 +152,14 @@ function Hero() {
         >
           Engineering Tomorrow's
           <br />
-          <span style={{ color: '#4287f5' }}>Technology.</span>
+          <span style={{ color: '#636b2f' }}>Technology.</span>
         </h1>
 
         <p
           className="text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed"
           style={{ color: 'rgba(226,232,240,0.6)' }}
         >
-          Vertex Labs &amp; Services Ltd helps enterprises optimize cloud infrastructure,
+          Vertex Labs Ltd helps enterprises optimize cloud infrastructure,
           build powerful software, and transform their systems for the digital age.
         </p>
 
@@ -172,7 +167,7 @@ function Hero() {
           <a
             href="#contact"
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-sm font-semibold transition-opacity hover:opacity-85"
-            style={{ backgroundColor: '#4287f5', color: '#0F172A' }}
+            style={{ backgroundColor: '#636b2f', color: '#0F172A' }}
           >
             Start a Project <ArrowIcon className="w-4 h-4" />
           </a>
@@ -214,7 +209,7 @@ function Stats() {
               className={`text-center md:px-8 ${i > 0 ? 'md:border-l' : ''}`}
               style={i > 0 ? { borderColor: 'rgba(15,23,42,0.8)' } : {}}
             >
-              <div className="text-4xl md:text-5xl font-bold tracking-tight mb-2" style={{ color: '#4287f5' }}>
+              <div className="text-4xl md:text-5xl font-bold tracking-tight mb-2" style={{ color: '#636b2f' }}>
                 {value}
               </div>
               <div className="text-sm font-medium" style={{ color: 'rgba(226,232,240,0.5)' }}>{label}</div>
@@ -273,14 +268,14 @@ function Services() {
     <section id="services" className="py-32" style={{ backgroundColor: '#0F172A' }}>
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="max-w-2xl mb-20">
-          <p className="text-xs font-bold tracking-widest uppercase mb-4" style={{ color: '#4287f5' }}>
+          <p className="text-xs font-bold tracking-widest uppercase mb-4" style={{ color: '#636b2f' }}>
             What We Do
           </p>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight leading-tight mb-6" style={{ color: '#E2E8F0' }}>
-            End-to-end technology solutions for modern enterprises.
+            End-to-end solutions for modern enterprises.
           </h2>
           <p className="text-lg leading-relaxed" style={{ color: 'rgba(226,232,240,0.55)' }}>
-            From the cloud to the code, we build and optimize the technology that drives your business forward.
+            From the code to the cloud, we build and optimize the technology that drives your business forward.
           </p>
         </div>
 
@@ -297,7 +292,7 @@ function Services() {
                 className="w-12 h-12 rounded-2xl flex items-center justify-center mb-6 shrink-0"
                 style={{ backgroundColor: 'rgba(163,255,18,0.1)' }}
               >
-                <Icon className="w-6 h-6" style={{ color: '#4287f5' }} />
+                <Icon className="w-6 h-6" style={{ color: '#636b2f' }} />
               </div>
 
               <h3 className="text-xl font-bold mb-3" style={{ color: '#E2E8F0' }}>{title}</h3>
@@ -306,7 +301,7 @@ function Services() {
               <ul className="space-y-3 mb-8 flex-1">
                 {features.map((f) => (
                   <li key={f} className="flex items-start gap-2.5 text-sm" style={{ color: 'rgba(226,232,240,0.65)' }}>
-                    <CheckIcon className="w-4 h-4 shrink-0 mt-0.5" style={{ color: '#4287f5' }} />
+                    <CheckIcon className="w-4 h-4 shrink-0 mt-0.5" style={{ color: '#636b2f' }} />
                     {f}
                   </li>
                 ))}
@@ -315,7 +310,7 @@ function Services() {
               <a
                 href="#contact"
                 className="inline-flex items-center gap-1.5 text-sm font-semibold transition-all group-hover:gap-3"
-                style={{ color: '#4287f5' }}
+                style={{ color: '#636b2f' }}
               >
                 Learn more <ArrowIcon className="w-4 h-4" />
               </a>
@@ -351,8 +346,8 @@ function Why() {
     <section id="why" className="py-32" style={{ backgroundColor: '#1E293B' }}>
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="max-w-2xl mb-20">
-          <p className="text-xs font-bold tracking-widest uppercase mb-4" style={{ color: '#4287f5' }}>
-            Why Vertex Labs
+          <p className="text-xs font-bold tracking-widest uppercase mb-4" style={{ color: '#636b2f' }}>
+            Why Vertex Labs?
           </p>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight leading-tight mb-6" style={{ color: '#E2E8F0' }}>
             We don't just deliver software.
@@ -369,12 +364,12 @@ function Why() {
             <div
               key={title}
               className={`p-10 transition-colors ${i % 2 === 0 && i < WHY_FEATURES.length - 1
-                  ? 'border-b md:border-b md:border-r'
-                  : i < WHY_FEATURES.length - 2
-                    ? 'border-b'
-                    : i === WHY_FEATURES.length - 2
-                      ? 'border-b md:border-b-0 md:border-r'
-                      : ''
+                ? 'border-b md:border-b md:border-r'
+                : i < WHY_FEATURES.length - 2
+                  ? 'border-b'
+                  : i === WHY_FEATURES.length - 2
+                    ? 'border-b md:border-b-0 md:border-r'
+                    : ''
                 }`}
               style={{ backgroundColor: '#0F172A', borderColor: 'rgba(163,255,18,0.1)' }}
               onMouseEnter={e => e.currentTarget.style.backgroundColor = '#1E293B'}
@@ -418,7 +413,7 @@ function Process() {
     <section id="process" className="py-32" style={{ backgroundColor: '#0F172A' }}>
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="max-w-2xl mb-20">
-          <p className="text-xs font-bold tracking-widest uppercase mb-4" style={{ color: '#4287f5' }}>
+          <p className="text-xs font-bold tracking-widest uppercase mb-4" style={{ color: '#636b2f' }}>
             How We Work
           </p>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight leading-tight mb-6" style={{ color: '#E2E8F0' }}>
@@ -442,7 +437,7 @@ function Process() {
                 className="w-14 h-14 rounded-2xl flex items-center justify-center mb-6 border"
                 style={{ backgroundColor: '#1E293B', borderColor: 'rgba(163,255,18,0.15)' }}
               >
-                <span className="text-lg font-bold" style={{ color: '#4287f5' }}>{num}</span>
+                <span className="text-lg font-bold" style={{ color: '#636b2f' }}>{num}</span>
               </div>
               <h3 className="text-lg font-bold mb-3" style={{ color: '#E2E8F0' }}>{title}</h3>
               <p className="text-sm leading-relaxed" style={{ color: 'rgba(226,232,240,0.55)' }}>{desc}</p>
@@ -460,12 +455,12 @@ function CTA() {
       <div className="absolute inset-0 pointer-events-none">
         <div
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] rounded-full blur-3xl opacity-15"
-          style={{ background: 'radial-gradient(ellipse, #4287f5 0%, transparent 70%)' }}
+          style={{ background: 'radial-gradient(ellipse, #636b2f 0%, transparent 70%)' }}
         />
       </div>
 
       <div className="relative max-w-4xl mx-auto px-6 text-center">
-        <p className="text-xs font-bold tracking-widest uppercase mb-6" style={{ color: '#4287f5' }}>
+        <p className="text-xs font-bold tracking-widest uppercase mb-6" style={{ color: '#636b2f' }}>
           Get In Touch
         </p>
         <h2
@@ -474,7 +469,7 @@ function CTA() {
         >
           Ready to build something
           <br />
-          <span style={{ color: '#4287f5' }}>exceptional?</span>
+          <span style={{ color: '#636b2f' }}>exceptional?</span>
         </h2>
         <p className="text-lg mb-10 max-w-xl mx-auto leading-relaxed" style={{ color: 'rgba(226,232,240,0.55)' }}>
           Let's talk about your project. We'll help you define the right strategy and build the technology to make it happen.
@@ -483,7 +478,7 @@ function CTA() {
           <a
             href="mailto:hello@vertexlabs.io"
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-sm font-semibold transition-opacity hover:opacity-85"
-            style={{ backgroundColor: '#4287f5', color: '#0F172A' }}
+            style={{ backgroundColor: '#636b2f', color: '#0F172A' }}
           >
             Contact Us <ArrowIcon className="w-4 h-4" />
           </a>
@@ -513,12 +508,7 @@ function Footer() {
         <div className="grid md:grid-cols-4 gap-12 mb-16">
           <div className="md:col-span-2">
             <div className="flex items-center gap-2.5 mb-4">
-              <div
-                className="w-8 h-8 rounded-lg flex items-center justify-center"
-                style={{ backgroundColor: '#4287f5' }}
-              >
-                <span className="font-bold text-sm" style={{ color: '#0F172A' }}>V</span>
-              </div>
+              <img src="/icon-white.svg" alt="Vertex Labs" className="w-8 h-8 rounded-lg" />
               <span className="font-semibold tracking-tight" style={{ color: '#E2E8F0' }}>Vertex Labs</span>
             </div>
             <p className="text-sm leading-relaxed max-w-xs" style={{ color: 'rgba(226,232,240,0.45)' }}>
@@ -568,7 +558,7 @@ function Footer() {
 
         <div className="pt-8 border-t flex flex-col md:flex-row items-center justify-between gap-4" style={{ borderColor: '#1E293B' }}>
           <p className="text-xs" style={{ color: 'rgba(226,232,240,0.3)' }}>
-            © {year} Vertex Labs &amp; Services Ltd. All rights reserved.
+            © {year} Vertex Labs Ltd. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             {['Privacy Policy', 'Terms of Service'].map((l) => (
