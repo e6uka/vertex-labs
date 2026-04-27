@@ -57,11 +57,6 @@ export default function Hero() {
           </a>
         </div>
       </div>
-
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2" style={{ color: 'rgba(226,232,240,0.3)' }}>
-        <span className="text-xs tracking-widest uppercase font-medium">Scroll</span>
-        <div className="w-px h-8" style={{ background: 'linear-gradient(to bottom, rgba(226,232,240,0.3), transparent)' }} />
-      </div>
     </section>
   )
 }
