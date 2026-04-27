@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@posthog/react": "^1.8.2",
+    "@vercel/analytics": "^2.0.1",
     "claude": "^0.1.2",
     "posthog-js": "^1.363.5",
     "react": "^19.2.4",
