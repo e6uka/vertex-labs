@@ -12,6 +12,7 @@ import Footer from './components/Footer'
 import AboutUs from './components/AboutUs'
 import PrivacyPolicy from './components/PrivacyPolicy'
 import TermsOfService from './components/TermsOfService'
+import { Analytics } from '@vercel/analytics/react'
 
 function getPageFromPath() {
   const path = window.location.pathname
@@ -36,11 +37,11 @@ export default function App() {
     return () => window.removeEventListener('popstate', onPop)
   }, [])
 
-  if (page === 'about') return <AboutUs onNavigate={navigate} />
-  if (page === 'privacy') return <PrivacyPolicy onNavigate={navigate} />
-  if (page === 'terms') return <TermsOfService onNavigate={navigate} />
-
-  return (
+  let content
+  if (page === 'about') content = <AboutUs onNavigate={navigate} />
+  else if (page === 'privacy') content = <PrivacyPolicy onNavigate={navigate} />
+  else if (page === 'terms') content = <TermsOfService onNavigate={navigate} />
+  else content = (
     <div className="font-sans antialiased">
       <Nav />
       <Hero />
@@ -51,5 +52,12 @@ export default function App() {
       <CTA />
       <Footer onNavigate={navigate} />
     </div>
+  )
+
+  return (
+    <>
+      {content}
+      <Analytics />
+    </>
   )
 }
