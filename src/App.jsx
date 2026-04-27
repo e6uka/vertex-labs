@@ -28,7 +28,6 @@ export default function App() {
   const navigate = useCallback((target) => {
     window.history.pushState({}, '', target === 'home' ? '/' : `/${target}`)
     setPage(target)
-    window.scrollTo(0, 0)
   }, [])
 
   useEffect(() => {
@@ -36,6 +35,10 @@ export default function App() {
     window.addEventListener('popstate', onPop)
     return () => window.removeEventListener('popstate', onPop)
   }, [])
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
+  }, [page])
 
   let content
   if (page === 'about') content = <AboutUs onNavigate={navigate} />

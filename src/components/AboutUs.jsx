@@ -91,7 +91,7 @@ export default function AboutUs({ onNavigate }) {
           <p className="text-base leading-relaxed" style={{ color: 'rgba(226,232,240,0.65)' }}>
             The instinct — almost every time — was to buy more. More servers. More tooling. More headcount.
             Layer another solution on top of an undiagnosed problem and call it progress. We watched tens of
-            millions of naira disappear into this cycle. We watched brilliant engineers burn out maintaining
+            millions disappear into this cycle. We watched brilliant engineers burn out maintaining
             systems they hadn't designed and couldn't fully understand. We watched companies lose competitive
             ground not because the market shifted but because their own infrastructure made it impossible to move.
           </p>
