@@ -45,7 +45,7 @@ const SECTIONS = [
   },
   {
     title: '12. Contact',
-    content: `If you have questions about these Terms of Service, please contact us at:\n\nVertex Labs Ltd\nEmail: legal@vertexlabs.io\nWebsite: vertexlabs.io`,
+    content: `If you have questions about these Terms of Service, please contact us at:\n\nVertex Labs Ltd\nEmail: info@vertex-labs.org\nWebsite: vertex-labs.org`,
   },
 ]
 
