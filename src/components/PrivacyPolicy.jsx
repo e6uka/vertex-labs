@@ -33,7 +33,7 @@ const SECTIONS = [
   },
   {
     title: '9. Your Rights',
-    content: `Depending on your location, you may have the following rights regarding your personal data:\n\nAccess: request a copy of the personal data we hold about you.\n\nRectification: request correction of inaccurate or incomplete data.\n\nErasure: request deletion of your personal data where we have no lawful basis for continued processing.\n\nRestriction: request that we restrict processing of your data in certain circumstances.\n\nPortability: receive your data in a structured, commonly used format.\n\nObjection: object to processing based on legitimate interests or for direct marketing.\n\nWithdraw consent: where processing is based on consent, withdraw it at any time without affecting prior processing.\n\nTo exercise any of these rights, contact us at info@vertex-labs.org. We will respond within 30 days.`,
+    content: `Depending on your location, you may have the following rights regarding your personal data:\n\nAccess: request a copy of the personal data we hold about you.\n\nRectification: request correction of inaccurate or incomplete data.\n\nErasure: request deletion of your personal data where we have no lawful basis for continued processing.\n\nRestriction: request that we restrict processing of your data in certain circumstances.\n\nPortability: receive your data in a structured, commonly used format.\n\nObjection: object to processing based on legitimate interests or for direct marketing.\n\nWithdraw consent: where processing is based on consent, withdraw it at any time without affecting prior processing.\n\nTo exercise any of these rights, contact us at legal@vertex-labs.org. We will respond within 30 days.`,
   },
   {
     title: '10. Security',
@@ -53,7 +53,7 @@ const SECTIONS = [
   },
   {
     title: '14. Contact Us',
-    content: `If you have questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact our Data Protection contact:\n\nVertex Labs Ltd\nEmail: info@vertex-labs.org\nWebsite: vertex-labs.org\n\nIf you are located in the UK or EEA and are unsatisfied with our response, you have the right to lodge a complaint with your local data protection authority (e.g., the ICO in the United Kingdom).`,
+    content: `If you have questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact our Data Protection contact:\n\nVertex Labs Ltd\nEmail: legal@vertex-labs.org\nWebsite: vertex-labs.org\n\nIf you are located in the UK or EEA and are unsatisfied with our response, you have the right to lodge a complaint with your local data protection authority (e.g., the ICO in the United Kingdom).`,
   },
 ]
 
