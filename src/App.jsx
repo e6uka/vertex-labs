@@ -58,6 +58,7 @@ import AboutUs from './components/AboutUs'
 import PrivacyPolicy from './components/PrivacyPolicy'
 import TermsOfService from './components/TermsOfService'
 import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 
 function getPageFromPath() {
   const path = window.location.pathname
@@ -107,6 +108,7 @@ export default function App() {
     <>
       {content}
       <Analytics />
+      <SpeedInsights />
     </>
   )
 }
