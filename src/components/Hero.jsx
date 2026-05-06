@@ -18,7 +18,7 @@ export default function Hero() {
           className="inline-flex items-center gap-2 text-xs font-semibold px-4 py-2 rounded-full mb-8 tracking-widest uppercase border"
           style={{ backgroundColor: 'rgba(163,255,18,0.08)', borderColor: 'rgba(163,255,18,0.2)', color: '#636b2f' }}
         >
-          Cloud · Software · Systems
+          Software · Cloud · Systems
         </div>
 
         <h1
