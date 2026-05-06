@@ -1,0 +1,15 @@
+# Vertex Labs
+
+> Vertex Labs Ltd helps enterprises optimize cloud infrastructure, build powerful software, and transform systems for the digital age. We specialize in cloud optimization, software development, and system engineering.
+
+Vertex Labs was founded by engineers who spent years inside enterprises — financial institutions, logistics firms, healthcare platforms — watching great companies suffocate under systems never designed for the problems they were actually being asked to solve. We built Vertex Labs with one conviction: every system deserves to be understood before it's changed, and changed with the precision of someone who actually cares about what happens after they leave the room.
+
+## Pages
+
+- [Home](https://vertex-labs.org/index.md): Overview of services, stats, engagement process, and contact
+- [About](https://vertex-labs.org/about.md): Company origin story, values, and how we work
+
+## Optional
+
+- [Privacy Policy](https://vertex-labs.org/privacy): How we collect, use, and protect personal information
+- [Terms of Service](https://vertex-labs.org/terms): Terms governing use of Vertex Labs products and services

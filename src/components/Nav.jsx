@@ -18,8 +18,8 @@ export default function Nav() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? 'backdrop-blur-xl shadow-lg border-b' : 'bg-transparent'}`}
-      style={scrolled ? { backgroundColor: 'rgba(15,23,42,0.92)', borderColor: '#1E293B' } : {}}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled || menuOpen ? 'backdrop-blur-xl shadow-lg border-b' : 'bg-transparent'}`}
+      style={scrolled || menuOpen ? { backgroundColor: 'rgba(15,23,42,0.92)', borderColor: '#1E293B' } : {}}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
